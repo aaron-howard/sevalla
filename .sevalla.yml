@@ -1,0 +1,7 @@
+name: training-certify
+region: dfw
+plan: free
+build:
+  command: npm ci --omit=dev && npx prisma generate && npm run build
+  output: .next
+env: []
